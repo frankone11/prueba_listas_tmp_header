@@ -54,7 +54,7 @@ namespace KtListas
 			info = informacion;
 		}
 
-		T DameInformacion(void)
+		T& DameInformacion(void)
 		{
 			return info;
 		}
