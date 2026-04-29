@@ -7,11 +7,11 @@ using namespace std;
 int main()
 {
 	ListaInfo L;
-	ListaStr LS;
+	LListaStr LS;
 	unsigned int i;
 	Info I;
 
-	struct _ListaStr LStr;
+	ListaStr LStr;
 
 	L.AgregaNodo(Info("Hola"));
 	L.AgregaNodo(Info("Aquí estoy"));
@@ -38,6 +38,17 @@ int main()
 		I = L.DameInfoPorPosicion(i);
 		cout << "# "<< i+1 << "\t" << I.DameNombre() << endl;
 	}
+
+	cout << "*****" << endl;
+
+	for( i = 0; i < LS.DameNumDatos(); i++ )
+	{
+		cout << "# " << i+1 << "\t" << LS.DameInfoPorPosicion(i).nombre << endl;
+	}
+
+	LStr.id = 0;
+	LStr.nombre = "Nuevisima";
+	LS.DameNodoPorPosicion(0)->ColocaInformacion(LStr);
 
 	cout << "*****" << endl;
 

@@ -12,13 +12,13 @@
 #include <string>
 #include "listat.hpp"
 
-struct _ListaStr
+typedef struct _ListaStr
 {
 	int id;
 	std::string nombre;
-};
+} ListaStr;
 
-typedef KtListas::ListaT<_ListaStr> ListaStr;
+typedef KtListas::ListaT<ListaStr> LListaStr;
 
 
 #endif /* INC_LISTASTR_H_ */
