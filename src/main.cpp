@@ -4,6 +4,11 @@
 
 using namespace std;
 
+/**
+ * @brief Main function
+ *
+ * @return System exit, normally 0.
+ */
 int main()
 {
 	ListaInfo L;
@@ -43,7 +48,7 @@ int main()
 
 	for( i = 0; i < LS.DameNumDatos(); i++ )
 	{
-		cout << "# " << i+1 << "\t" << LS.DameInfoPorPosicion(i).nombre << endl;
+		cout << "> " << i+1 << "\t" << LS.DameInfoPorPosicion(i).nombre << endl;
 	}
 
 	LStr.id = 0;
@@ -54,7 +59,7 @@ int main()
 
 	for( i = 0; i < LS.DameNumDatos(); i++ )
 	{
-		cout << "# " << i+1 << "\t" << LS.DameInfoPorPosicion(i).nombre << endl;
+		cout << "* " << i+1 << "\t" << LS.DameInfoPorPosicion(i).nombre << endl;
 	}
 
 	return 0;
